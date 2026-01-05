@@ -1,44 +1,52 @@
-import Navbar from "./components/Navbar"
-function App() { 
+function App() {
   return (
     <>
-      {/* NAVBAR */}
-      <header>
-        <Navbar />
+      <header className="topbar">
+        <h1>Omah Cempe 🐐</h1>
       </header>
 
-      {/* HERO / OPENING */}
-      <section>
-        Hero Section
-      </section>
+      <main>
+        {/* HERO */}
+        <section className="hero">
+          <div className="hero-text">
+            <span className="hero-tag">Halo 👋</span>
+            <h2>Peternakan Kambing</h2>
+            <p>
+              Usaha peternakan yang fokus pada perawatan,
+              kesehatan, dan dokumentasi ternak secara transparan.
+            </p>
 
-      {/* LAYANAN */}
-      <section>
-        Layanan
-      </section>
+            <div className="hero-actions">
+              <button>Lihat Dokumentasi</button>
+              <button className="outline">Hubungi Kami</button>
+            </div>
+          </div>
 
-      {/* PROSES */}
-      <section>
-        Proses Perawatan
-      </section>
+          <div className="hero-image">
+            <div className="image-placeholder">
+              Foto Kambing
+            </div>
+          </div>
+        </section>
 
-      {/* DOKUMENTASI */}
-      <section>
-        Dokumentasi
-      </section>
+        {/* LAYANAN */}
+        <section className="services">
+  <h2>Layanan</h2>
 
-      {/* KONTAK */}
-      <section>
-        Kontak
-      </section>
+  <div className="service-grid">
+    <div className="service-card">Kambing Aqiqah</div>
+    <div className="service-card">Kambing Kurban</div>
+    <div className="service-card">Bibit Cempe</div>
+  </div>
+</section>
 
-      {/* FOOTER */}
+      </main>
+
       <footer>
-        design by grh
+        <p>© Omah Cempe</p>
       </footer>
     </>
   )
 }
 
 export default App
-
