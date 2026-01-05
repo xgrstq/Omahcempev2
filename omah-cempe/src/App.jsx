@@ -1,9 +1,10 @@
-function App() {
+import Navbar from "./components/Navbar"
+function App() { 
   return (
     <>
       {/* NAVBAR */}
       <header>
-        Navbar
+        <Navbar />
       </header>
 
       {/* HERO / OPENING */}
