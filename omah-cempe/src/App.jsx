@@ -23,7 +23,7 @@ function App() {
           </div>
 
           <div className="hero-image">
-            <div className="image-placeholder"> <img src="./tes.jpg" alt="" />
+            <div className="image-placeholder">
               Foto Kambing
             </div>
           </div>

@@ -71,6 +71,7 @@ footer {
   display: flex;
   gap: 12px;
   margin-top: 16px;
+  justify-items: center;
 }
 
 .hero-actions button {
@@ -80,6 +81,7 @@ footer {
   background: #3f5d3a;
   color: white;
   cursor: pointer;
+  justify-items: center;
 }
 
 .hero-actions .outline {
