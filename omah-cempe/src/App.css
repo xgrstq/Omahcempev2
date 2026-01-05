@@ -3,11 +3,14 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background: #f6f5f2;
   color: #2f2f2f;
+  text-align: center;
 }
 
 header {
   padding: 16px 20px;
   font-weight: 600;
+  align-items: center;
+  display: flex;
 }
 
 main {
@@ -21,11 +24,14 @@ section {
 h1 {
   margin: 0;
   font-size: 20px;
+  text-align: center;
+  display: flex;
 }
 
 h2 {
   font-size: 24px;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 p {
@@ -85,6 +91,7 @@ footer {
 .hero-image {
   display: flex;
   justify-content: center;
+  
 }
 
 .image-placeholder {
