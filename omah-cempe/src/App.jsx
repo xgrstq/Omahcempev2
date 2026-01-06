@@ -77,7 +77,7 @@ function App() {
       </main>
 
       <footer>
-        <p>© Omah Cempe</p>
+        <p>© OmahCempe berdiri sejak tidak kebagian kursi</p>
       </footer>
 
       {/* CONTACT POPUP */}
