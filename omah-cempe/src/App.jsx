@@ -51,6 +51,27 @@ function App() {
 
         {/* LAYANAN */}
         <section className="services">
+          {/* TENTANG OMAH CEMPE */}
+<section className="about">
+  <h2>Tentang Omah Cempe</h2>
+  <p>
+    Omah Cempe adalah usaha peternakan kambing yang dikelola langsung oleh
+    keluarga kami. Kami percaya bahwa ternak yang sehat berasal dari
+    perawatan yang konsisten dan lingkungan yang terjaga dengan baik.
+  </p>
+
+  <p>
+    Kebersihan kandang menjadi rutinitas utama karena lingkungan yang bersih
+    sangat berpengaruh pada kenyamanan dan kesehatan kambing. Selain itu,
+    pemberian pakan dilakukan secara teratur dengan nutrisi yang seimbang.
+  </p>
+
+  <p>
+    Baik kambing yang siap disembelih maupun bibit cempe calon induk dan
+    pejantan, semuanya dirawat dengan standar yang sama dan penuh perhatian.
+  </p>
+</section>
+
           <div className="container">
             <h2>Layanan</h2>
 
