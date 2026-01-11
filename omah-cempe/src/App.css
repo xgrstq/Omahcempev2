@@ -408,7 +408,7 @@ footer {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
 
-.location-card :nth-child(1) {
+.location-card:nth-child(1) {
   animation-delay: 0.2s;
 }
 
