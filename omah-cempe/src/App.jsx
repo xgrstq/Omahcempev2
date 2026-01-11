@@ -95,6 +95,30 @@ function App() {
             </div>
           </div>
         </section>
+
+{/* TEMUKAN KAMI */}
+<section className="location">
+    <h2>Temukan Kami</h2>
+    <p className="location-description">
+      Kunjungi langsung peternakan Omah Cempe dan lihat proses perawatan ternak secara langsung.
+    </p>
+
+    <div className="location-card">
+      <span className="location-icon"></span>
+      <h3>Omah Cempe</h3>
+      <p>Pertenanakan Kambing Keluarga</p>
+
+      <a
+        href="https://maps.app.goo.gl/RfEF1R2QDxif55MA6"
+        target="_blank"
+        rel="noreferrer"
+        className="location-link"
+      >
+        Lihat di Google Maps
+      </a>
+  </div>
+</section>
+
       </main>
 
       <footer>

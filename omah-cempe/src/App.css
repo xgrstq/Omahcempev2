@@ -296,8 +296,8 @@ footer {
 .gallery-card:nth-child(3) {
   animation-delay: 0.3s;
 }
-.gallery-card:nth-child(3) {
-  animation-delay: 0.3s;
+.gallery-card:nth-child(4) {
+  animation-delay: 0.4s;
 }
 
 /* contact */
@@ -372,4 +372,63 @@ footer {
 .hero-actions button {
     width: fix-content;
   }
+}
+
+/* TEMUKAN KAMI */
+.location {
+  margin-top: 64px;
+  text-align: center;
+}
+
+.location-description {
+  max-width: 520px;
+  margin: 0 auto 24px;
+  font-size: 14px;
+  color: #555;
+}
+
+.location-card {
+  background: white;
+  border-radius: 28px;
+  padding: 28px;
+  max-width: 360px;
+  margin: 0 auto;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.location-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.location-card:active {
+  transform: scale(0.97);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.location-card :nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.location-icon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.location-link {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #3f5d3a;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.location-link:hover {
+  opacity: 0.9;
 }
