@@ -432,3 +432,9 @@ footer {
 .location-link:hover {
   opacity: 0.9;
 }
+
+/* text highlight */
+.text-highlight {
+  font-weight: 500;
+  opacity: 0.85;
+}  
