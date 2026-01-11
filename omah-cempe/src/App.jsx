@@ -59,7 +59,7 @@ function App() {
     keluarga kami. Kami percaya bahwa ternak yang sehat berasal dari
     perawatan yang konsisten dan lingkungan yang terjaga dengan baik.
   </p>
-  
+
   <p>
     Kebersihan kandang menjadi rutinitas utama karena lingkungan yang bersih
     sangat berpengaruh pada kenyamanan dan kesehatan kambing. Selain itu,
@@ -107,7 +107,7 @@ function App() {
     <div className="location-card">
       <span className="location-icon"></span>
       <h3>Omah Cempe</h3>
-      <p>Pertenanakan Kambing Keluarga</p>
+      <p>klik tulisan dibawah ini</p>
 
       <a
         href="https://maps.app.goo.gl/RfEF1R2QDxif55MA6"
