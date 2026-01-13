@@ -42,6 +42,7 @@ function App() {
 
             <div className="hero-image">
               <div className="image-placeholder" />
+              <img src="/images/" alt="" />
             </div>
           </div>
         </section>
