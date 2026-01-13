@@ -202,8 +202,14 @@ footer {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
+  justify-items: center;
+}
+
+.service-card {
+  width: 100%;
+  max-width: 190px;
 }
 
 .service-card {
@@ -264,7 +270,7 @@ footer {
 
 .gallery-dashboard {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 16px;
 }
 

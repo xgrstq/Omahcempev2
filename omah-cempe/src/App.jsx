@@ -1,4 +1,5 @@
 import { useState } from "react";
+import kambingimg from "./assets/kambing.jpg";
 
 function App() {
   const [openContact, setOpenContact] = useState(false);
@@ -43,7 +44,8 @@ function App() {
 
             <div className="hero-image">
               <div className="image-placeholder">
-                Foto Kambing
+                <img src={kambingimg} alt="Kambing Omah Cempe" />
+                           
               </div>
             </div>
           </div>
@@ -63,7 +65,7 @@ function App() {
   <p>
     Kebersihan kandang menjadi rutinitas utama karena lingkungan yang bersih
     sangat berpengaruh pada kenyamanan dan kesehatan kambing. Selain itu,
-    pemberian pakan dilakukan secara teratur dengan nutrisi yang seimbang.
+    pemberian pakan dilakukan secara teratur dengan nutrisi yang cukup.
   </p>
 
   <p>
@@ -80,6 +82,8 @@ function App() {
               <div className="service-card">Kambing Aqiqah</div>
               <div className="service-card">Kambing Kurban</div>
               <div className="service-card">Bibit Cempe</div>
+              <div className="service-card">Pejantan</div>
+              <div className="service-card">Indukan</div>
             </div>
           </div>
         </section>
