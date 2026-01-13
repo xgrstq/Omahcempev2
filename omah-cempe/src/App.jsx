@@ -1,5 +1,4 @@
 import { useState } from "react";
-import kambingimg from "./assets/kambing.jpg";
 
 function App() {
   const [openContact, setOpenContact] = useState(false);
@@ -44,7 +43,7 @@ function App() {
 
             <div className="hero-image">
               <div className="image-placeholder">
-                <img src={kambingimg} alt="Kambing Omah Cempe" />
+              
                            
               </div>
             </div>
