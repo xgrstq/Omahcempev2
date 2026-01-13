@@ -16,9 +16,8 @@ function App() {
             <div className="hero-text">
               <span className="hero-tag">Hola 👋</span>
               <h2>Peternakan Kambing</h2>
-              <p>
-                Usaha peternakan yang fokus pada perawatan,
-                kesehatan.
+              <p className="text-highlight">
+                Usaha peternakan yang fokus pada perawatan dan kesehatan ternak.
               </p>
 
               <div className="hero-actions">
@@ -42,38 +41,36 @@ function App() {
             </div>
 
             <div className="hero-image">
-              <div className="image-placeholder">
-              
-                           
-              </div>
+              <div className="image-placeholder" />
             </div>
+          </div>
+        </section>
+
+        {/* TENTANG OMAH CEMPE */}
+        <section className="about-us">
+          <div className="container">
+            <h2>Tentang Omah Cempe</h2>
+            <p className="text-highlight">
+              Omah Cempe adalah usaha peternakan kambing yang dikelola langsung
+              oleh keluarga kami. Kami percaya bahwa ternak yang sehat berasal
+              dari perawatan yang konsisten dan lingkungan yang terjaga dengan baik.
+            </p>
+
+            <p className="text-highlight">
+              Kebersihan kandang menjadi rutinitas utama karena lingkungan yang bersih
+              sangat berpengaruh pada kenyamanan dan kesehatan kambing.
+              Pemberian pakan dilakukan secara teratur dengan nutrisi yang cukup.
+            </p>
+
+            <p className="text-highlight">
+              Baik kambing yang siap disembelih maupun bibit cempe calon induk
+              dan pejantan, semuanya dirawat dengan standar yang sama dan penuh perhatian.
+            </p>
           </div>
         </section>
 
         {/* LAYANAN */}
         <section className="services">
-          {/* TENTANG OMAH CEMPE */}
-<section className="text-highlight about-us">
-  <h2>Tentang Omah Cempe</h2>
-  <p>
-    Omah Cempe adalah usaha peternakan kambing yang dikelola langsung oleh
-    keluarga kami. Kami percaya bahwa ternak yang sehat berasal dari
-    perawatan yang konsisten dan lingkungan yang terjaga dengan baik.
-  </p>
-
-  <p>
-    Kebersihan kandang menjadi rutinitas utama karena lingkungan yang bersih
-    sangat berpengaruh pada kenyamanan dan kesehatan kambing. Selain itu,
-    pemberian pakan dilakukan secara teratur dengan nutrisi yang cukup.
-  </p>
-
-  <p>
-    Baik kambing yang siap disembelih maupun bibit cempe calon induk dan
-    pejantan, semuanya dirawat dengan standar yang sama dan penuh perhatian.
-  </p>
-
-</section>
-
           <div className="container">
             <h2>Layanan</h2>
 
@@ -87,46 +84,68 @@ function App() {
           </div>
         </section>
 
-        {/* GALLERY */}
+        {/* DOKUMENTASI */}
         <section id="gallery" className="gallery">
           <div className="container">
             <h2>Dokumentasi</h2>
 
-            <div className="gallery-dashboard">
-              <div className="gallery-card">Kandang</div>
-              <div className="gallery-card">Perawatan</div>
-              <div className="gallery-card">Aqiqah</div>
+            <div className="doc-card">
+              <h3>Dokumentasi Omah Cempe</h3>
+
+              <p className="text-highlight">
+                Dokumentasi kegiatan, perawatan, dan aktivitas peternakan
+                Omah Cempe dapat dilihat melalui media sosial kami.
+              </p>
+
+              <div className="doc-links">
+                <a
+                  href="https://instagram.com/omahcempe"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Instagram
+                </a>
+
+                <a
+                  href="https://youtube.com/@OmahCempene_Galia"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  YouTube
+                </a>
+              </div>
             </div>
           </div>
         </section>
 
-{/* TEMUKAN KAMI */}
-<section className="location">
-    <h2>Temukan Kami</h2>
-    <p className="location-description">
-      Kunjungi langsung peternakan Omah Cempe dan lihat proses perawatan ternak secara langsung.
-    </p>
+        {/* TEMUKAN KAMI */}
+        <section className="location">
+          <div className="container">
+            <h2>Temukan Kami</h2>
+            <p className="text-highlight">
+              Kunjungi langsung peternakan Omah Cempe dan lihat proses perawatan
+              ternak secara langsung.
+            </p>
 
-    <div className="location-card">
-      <span className="location-icon"></span>
-      <h3>Omah Cempe</h3>
-      <p>klik tulisan dibawah ini</p>
+            <div className="location-card">
+              <h3>Omah Cempe</h3>
+              <p>Klik tombol di bawah ini</p>
 
-      <a
-        href="https://maps.app.goo.gl/RfEF1R2QDxif55MA6"
-        target="_blank"
-        rel="noreferrer"
-        className="location-link"
-      >
-        Lihat di Google Maps
-      </a>
-  </div>
-</section>
-
+              <a
+                href="https://maps.app.goo.gl/RfEF1R2QDxif55MA6"
+                target="_blank"
+                rel="noreferrer"
+                className="location-link"
+              >
+                Lihat di Google Maps
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer>
-        <p>© OmahCempe berdiri sejak tidak kebagian kursi</p>
+        <p>© Omah Cempe Berdiri sejak tidak kebagian kursi</p>
       </footer>
 
       {/* CONTACT POPUP */}
@@ -139,10 +158,18 @@ function App() {
             className="contact-modal"
             onClick={(e) => e.stopPropagation()}
           >
-            <a href="https://wa.me/6282245226901" target="_blank" rel="noreferrer">
+            <a
+              href="https://wa.me/6282245226901"
+              target="_blank"
+              rel="noreferrer"
+            >
               WhatsApp
             </a>
-            <a href="https://instagram.com/galihadigrh_" target="_blank" rel="noreferrer">
+            <a
+              href="https://instagram.com/galihadigrh_"
+              target="_blank"
+              rel="noreferrer"
+            >
               Instagram
             </a>
           </div>
