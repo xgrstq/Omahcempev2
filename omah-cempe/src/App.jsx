@@ -146,7 +146,7 @@ function App() {
       </main>
 
       <footer>
-        <p>© Omah Cempe Berdiri sejak tidak kebagian kursi</p>
+        <p>© 2026 Omah Cempe Kediri Indonesia</p>
       </footer>
 
       {/* CONTACT POPUP */}
