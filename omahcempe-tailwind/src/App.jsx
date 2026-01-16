@@ -150,7 +150,7 @@ function App() {
           
           <div className="animate-fade-in-up z-10 order-2 md:order-1 text-center md:text-left">
             <span className="bg-[#1a2e1a]/10 text-[#1a2e1a] px-3 py-1 rounded-full font-bold uppercase tracking-widest text-[10px] mb-6 inline-block">
-              Est. 2024 • Kediri, Indonesia
+              Est. 2021 • Kediri, Indonesia
             </span>
             <h1 className="text-5xl lg:text-7xl font-extrabold leading-[1.1] mb-6 text-[#1a2e1a] tracking-tight">
               Solusi Ternak & <br/>
@@ -333,8 +333,8 @@ function App() {
                 <div className="flex items-start gap-3 mb-8">
                   <MapPin className="text-[#d4a373] mt-1 shrink-0" />
                   <div>
-                    <span className="block font-bold">Dusun Galia, Desa Karangrejo</span>
-                    <span className="text-sm text-gray-400">Kec. Ngasem, Kab. Kediri, Jawa Timur</span>
+                    <span className="block font-bold">Dusun Cendonosari, Desa Cendono</span>
+                    <span className="text-sm text-gray-400">Kec. Kandat, Kab. Kediri, Jawa Timur</span>
                   </div>
                 </div>
                 <button 
