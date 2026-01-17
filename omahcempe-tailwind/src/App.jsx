@@ -104,10 +104,11 @@ function App() {
       
       {/* --- NAVBAR --- */}
       <nav 
-        className={`fixed top-3 left-1/2 -translate-x-1/2 z-50 w-[99%] max-w-6xl transition-all duration-300 rounded-2xl backdrop-blur-xl py-2 ${
-          isScrolled 
-            ? "bg-grey/70 backdrop-blur-md shadow-sm py-4" 
-            : "bg-transparent py-6"
+        className={`fixed top-3 left-1/2 -translate-x-1/2 z-50 w-[99%] max-w-6xl transition-all duration-300 rounded-2xl backdrop-blur-xl ${
+          isScrolled
+           ? "bg-white/95 shadow-md backdrop-blur-sm py-3"
+           : "bg-transparent py-5"
+
         }`}
         
       >
@@ -118,9 +119,16 @@ function App() {
           </div>
 
           <div className="hidden md:flex gap-8 items-center font-semibold text-sm text-gray-600">
-            <button onClick={() => scrollTo('services')} className="hover:text-[#1a2e1a] transition">Layanan</button>
-            <button onClick={() => scrollTo('investment')} className="hover:text-[#1a2e1a] transition">Investasi</button>
-            <button onClick={() => scrollTo('reviews')} className="hover:text-[#1a2e1a] transition">Kata Mereka</button>
+            <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="hover:text-[#102a10] transition"
+>
+           Home
+          </button>
+          
+            <button onClick={() => scrollTo('services')} className="hover:text-[#102a10] transition">Layanan</button>
+            <button onClick={() => scrollTo('investment')} className="hover:text-[#102a10] transition">Investasi</button>
+            <button onClick={() => scrollTo('reviews')} className="hover:text-[#102a10] transition">Kata Mereka</button>
             <button 
               onClick={() => window.open('https://wa.me/6282245226901', '_blank')}
               className="bg-[#1a2e1a] text-white px-6 py-2.5 rounded-full hover:bg-[#2f4f2f] transition flex items-center gap-2 shadow-lg hover:shadow-[#1a2e1a]/20"
