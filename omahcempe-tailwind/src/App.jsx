@@ -43,7 +43,7 @@ function App() {
       name: "Bu Sri Wahyuni",
       role: "Pembeli Qurban",
       text: "Kambingnya sehat-sehat, gemuk. Diantar tepat waktu pas hari H. Mas-mas pengirimnya juga ramah dan amanah. Tahun depan InsyaAllah pesan sini lagi.",
-      rating: 5
+      rating: 4
     }
   ];
 
