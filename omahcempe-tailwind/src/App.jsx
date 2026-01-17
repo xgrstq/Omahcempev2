@@ -112,7 +112,7 @@ function App() {
       >
         <div className="container mx-auto px-6 flex justify-between items-center max-w-6xl">
           <div className="text-2xl font-extrabold text-[#1a2e1a] tracking-tight flex items-center gap-2">
-            <span>🐐</span> Omah Cempe
+            <span></span> Omah Cempe
           </div>
 
           <div className="hidden md:flex gap-8 items-center font-semibold text-sm text-gray-600">
@@ -366,7 +366,7 @@ function App() {
         <div className="container mx-auto max-w-6xl">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <div className="space-y-6">
-                    <h3 className="text-2xl font-bold flex items-center gap-2">🐐 Omah Cempe</h3>
+                    <h3 className="text-2xl font-bold flex items-center gap-2">Omah Cempe</h3>
                     <p className="text-gray-400 text-sm leading-relaxed">
                         Menyediakan hewan ternak berkualitas dengan perawatan terbaik. Amanah, syari, dan profesional.
                     </p>
