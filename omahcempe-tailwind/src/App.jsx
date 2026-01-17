@@ -104,7 +104,7 @@ function App() {
       
       {/* --- NAVBAR --- */}
       <nav 
-        className={`fixed top-3 left-1/2 -translate-x-1/2 z-50 w-[99%] max-w-6xl transition-all duration-300 rounded-2xl backdrop-blur-xl ${
+        className={`fixed top-3 left-1/2 -translate-x-1/2 z-50 w-[99%] max-w-6xl transition-all duration-300 rounded-[2rem] backdrop-blur-xl ${
           isScrolled
            ? "bg-white/95 shadow-md backdrop-blur-sm py-3"
            : "bg-transparent py-5"
@@ -113,7 +113,7 @@ function App() {
         
       >
         
-        <div className="container mx-auto px-6 flex justify-between items-center max-w-6xl">
+        <div className="container mx-auto px-9 flex justify-between items-center max-w-6xl">
           <div className="text-2xl font-extrabold text-[#1a2e1a] tracking-tight flex items-center gap-2">
             <span></span> Omah Cempe
           </div>
