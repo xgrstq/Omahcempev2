@@ -1,14 +1,31 @@
 import { useState, useEffect } from "react";
-import { 
-  Menu, X, Phone, MapPin, Instagram, Youtube, 
-  ArrowRight, CheckCircle2, ChevronRight, XCircle, 
-  DollarSign, TrendingUp, ShieldCheck, Star, Quote 
-} from "lucide-react";
+import {
+  Menu,
+  X,
+  Phone,
+  MapPin,
+  Instagram,
+  Youtube,
+  ArrowRight,
+  CheckCircle2,
+  ChevronRight,
+  XCircle,
+  DollarSign,
+  TrendingUp,
+  ShieldCheck,
+  Star,
+  Quote,
+  Home,
+  Leaf,
+  Briefcase
+} 
+
+from "lucide-react";
 import "tailwindcss";
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
   const [activeModal, setActiveModal] = useState(null);
 
   useEffect(() => {
@@ -20,10 +37,41 @@ function App() {
   }, []);
 
   const scrollTo = (id) => {
-    setMobileMenuOpen(false);
-    const element = document.getElementById(id);
-    if (element) element.scrollIntoView({ behavior: "smooth" });
+  const element = document.getElementById(id);
+  if (element) element.scrollIntoView({ behavior: "smooth" });
+};
+
+
+  useEffect(() => {
+  const handleScroll = () => {
+    const sections = [
+      { id: "services", key: "services" },
+      { id: "investment", key: "investment" },
+      { id: "reviews", key: "reviews" },
+    ];
+
+    const scrollPos = window.scrollY + window.innerHeight / 2;
+    let current = "home";
+
+    sections.forEach((section) => {
+      const el = document.getElementById(section.id);
+      if (!el) return;
+
+      if (
+        scrollPos >= el.offsetTop &&
+        scrollPos < el.offsetTop + el.offsetHeight
+      ) {
+        current = section.key;
+      }
+    });
+
+    setActiveSection(current);
   };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
 
   // --- DATA TESTIMONI (DUMMY CHAT) ---
   const testimonials = [
@@ -100,59 +148,104 @@ function App() {
   ];
 
   return (
-    <div className="font-sans text-gray-800 bg-[#f8f9fa] overflow-x-hidden antialiased">
+    <div className="font-sans text-gray-800 bg-[#f8f9fa] overflow-x-hidden antialiased pb-24 md:pb-0">
       
-      {/* --- NAVBAR --- */}
-      <nav 
-        className={`fixed top-3 left-1/2 -translate-x-1/2 z-50 w-[99%] max-w-6xl transition-all duration-300 rounded-[2rem] backdrop-blur-xl ${
-          isScrolled
-           ? "bg-white/95 shadow-md backdrop-blur-sm py-3"
-           : "bg-transparent py-5"
-
-        }`}
-        
-      >
-        
-        <div className="container mx-auto px-9 flex justify-between items-center max-w-6xl">
-          <div className="text-2xl font-extrabold text-[#1a2e1a] tracking-tight flex items-center gap-2">
-            <span></span> Omah Cempe
-          </div>
-
-          <div className="hidden md:flex gap-8 items-center font-semibold text-sm text-gray-600">
-            <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="hover:text-[#102a10] transition"
+     {/* --- NAVBAR DESKTOP --- */}
+<nav
+  className={`fixed top-3 left-1/2 -translate-x-1/2 z-50 w-[99%] max-w-6xl transition-all duration-300 rounded-[1rem] ${
+    isScrolled
+      ? "bg-white/95 shadow-md py-3"
+      : "bg-transparent py-5"
+  }`}
 >
-           Home
-          </button>
-          
-            <button onClick={() => scrollTo('services')} className="hover:text-[#102a10] transition">Layanan</button>
-            <button onClick={() => scrollTo('investment')} className="hover:text-[#102a10] transition">Investasi</button>
-            <button onClick={() => scrollTo('reviews')} className="hover:text-[#102a10] transition">Kata Mereka</button>
-            <button 
-              onClick={() => window.open('https://wa.me/6282245226901', '_blank')}
-              className="bg-[#1a2e1a] text-white px-6 py-2.5 rounded-full hover:bg-[#2f4f2f] transition flex items-center gap-2 shadow-lg hover:shadow-[#1a2e1a]/20"
-            >
-              <Phone size={16} /> Konsultasi
-            </button>
-          </div>
+  <div className="container mx-auto px-6 flex justify-between items-center max-w-6xl">
+    <div className="text-2xl font-extrabold text-[#1a2e1a] tracking-tight">
+      Omah Cempe
+    </div>
 
-          <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-            {mobileMenuOpen ? <X /> : <Menu />}
-          </button>
-        </div>
+    <div className="hidden md:flex gap-8 items-center font-semibold text-sm text-gray-600">
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="hover:text-[#102a10] transition"
+      >
+        Home
+      </button>
 
-        {mobileMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-white shadow-lg md:hidden flex flex-col p-6 gap-4 border-t border-gray-100 animate-fade-in">
-            <button onClick={() => scrollTo('services')} className="text-left py-2 border-b border-gray-100 font-medium">Layanan & Harga</button>
-            <button onClick={() => scrollTo('investment')} className="text-left py-2 border-b border-gray-100 font-medium">Mitra Investasi</button>
-            <button onClick={() => scrollTo('reviews')} className="text-left py-2 border-b border-gray-100 font-medium">Testimoni</button>
-            <button onClick={() => window.open('https://wa.me/6282245226901', '_blank')} className="bg-[#1a2e1a] text-white py-3 rounded-lg flex justify-center items-center gap-2 font-bold">
-              <Phone size={18} /> Hubungi Kami
-            </button>
-          </div>
-        )}
-      </nav>
+      <button
+        onClick={() => scrollTo("services")}
+        className="hover:text-[#102a10] transition"
+      >
+        Layanan
+      </button>
+
+      <button
+        onClick={() => scrollTo("investment")}
+        className="hover:text-[#102a10] transition"
+      >
+        Investasi
+      </button>
+
+      <button
+        onClick={() => scrollTo("reviews")}
+        className="hover:text-[#102a10] transition"
+      >
+        Kata Mereka
+      </button>
+
+      <button
+        onClick={() =>
+          window.open("https://wa.me/6282245226901", "_blank")
+        }
+        className="bg-[#1a2e1a] text-white px-6 py-2.5 rounded-full hover:bg-[#2f4f2f] transition flex items-center gap-2 shadow-lg"
+      >
+        <Phone size={16} /> Konsultasi
+      </button>
+    </div>
+  </div>
+</nav>
+
+{/* --- MOBILE BOTTOM NAVBAR --- */}
+<div className="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-md">
+  <div className="bg-white/95 shadow-lg rounded-2xl px-6 py-3 flex justify-between items-center">
+    <button
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      className={activeSection === "home" ? "text-[#1a2e1a]" : "text-gray-400"}
+    >
+      <Home size={24} />
+    </button>
+
+    <button
+      onClick={() => scrollTo("services")}
+      className={activeSection === "services" ? "text-[#1a2e1a]" : "text-gray-400"}
+    >
+      <Leaf size={24} />
+    </button>
+
+    <button
+      onClick={() => scrollTo("investment")}
+      className={activeSection === "investment" ? "text-[#1a2e1a]" : "text-gray-400"}
+    >
+      <Briefcase size={24} />
+    </button>
+
+    <button
+      onClick={() => scrollTo("reviews")}
+      className={activeSection === "reviews" ? "text-[#1a2e1a]" : "text-gray-400"}
+    >
+      <Star size={24} />
+    </button>
+
+    <button
+      onClick={() =>
+        window.open("https://wa.me/6282245226901", "_blank")
+      }
+      className="bg-[#1a2e1a] text-white p-3 rounded-full"
+    >
+      <Phone size={22} />
+    </button>
+  </div>
+</div>
+
 
       {/* --- HERO SECTION --- */}
       <header className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-6 overflow-hidden">
