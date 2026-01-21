@@ -24,17 +24,8 @@ from "lucide-react";
 import "tailwindcss";
 
 function App() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [activeModal, setActiveModal] = useState(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const scrollTo = (id) => {
   const element = document.getElementById(id);
@@ -151,7 +142,7 @@ function App() {
     <div className="font-sans text-gray-800 bg-[#f8f9fa] overflow-x-hidden antialiased pb-24 md:pb-0">
 
       {/* --- MOBILE STATIC BRAND --- */}
-<div className="md:hidden fixed top-4 left-4 z-50">
+<div className="md:hidden absolute top-4 left-4 z-50">
   <div className="bg-white/90 backdrop-blur px-4 py-2 rounded-xl shadow-sm text-lg font-extrabold text-[#1a2e1a]">
     Omah Cempe
   </div>
@@ -160,15 +151,8 @@ function App() {
       
      {/* --- NAVBAR DESKTOP --- */}
 <nav
-  className={`hidden md:block fixed top-3 left-1/2 -translate-x-1/2 z-50 w-[99%] max-w-6xl
-  transition-all duration-300 rounded-[1rem]
-  ${
-    isScrolled
-      ? "bg-white/95 shadow-md py-3"
-      : "bg-transparent py-5"
-  }
-  `}
->
+  className="hidden md:block fixed top-3 left-1/2 -translate-x-1/2 z-50 w-[99%] max-w-6xl bg-white/95 shadow-md py-4 rounded-[1rem]">
+
   <div className="container mx-auto px-6 flex justify-between items-center max-w-6xl">
     <div className="text-2xl font-extrabold text-[#1a2e1a] tracking-tight">
       Omah Cempe
