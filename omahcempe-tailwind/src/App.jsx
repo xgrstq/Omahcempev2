@@ -106,7 +106,7 @@ function App() {
       title: "Hewan Qurban", 
       desc: "Sedia Kambing & Domba jantan poel, sehat, dan cukup umur.", 
       priceStart: "Mulai Rp 2.5jt",
-      img: "https://images.unsplash.com/photo-1484557985045-6f550bb43282?q=80&w=800",
+      img: "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?q=80&w=800",
       details: [
         { type: "Tipe Ekonomi", price: "Rp 2.500.000", menu: "Bobot ± 25-28 kg" },
         { type: "Tipe Standar", price: "Rp 3.200.000", menu: "Bobot ± 29-34 kg" },
@@ -118,7 +118,7 @@ function App() {
       title: "Bibit Breeding", 
       desc: "Cempe lepas sapih genetik unggul (PE, Jawa Randu, Boer).", 
       priceStart: "Mulai Rp 850rb",
-      img: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=800",
+      img: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=800",
       details: [
         { type: "Cempe Jantan", price: "Rp 1.200.000", menu: "Usia 3-4 Bulan" },
         { type: "Cempe Betina", price: "Rp 850.000", menu: "Usia 3-4 Bulan" },
