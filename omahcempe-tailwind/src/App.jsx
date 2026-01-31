@@ -245,6 +245,7 @@ function App() {
                 <h3 className="text-xl font-bold mb-6 text-center">Simulasi Kemitraan</h3>
                 <div className="space-y-4 text-sm">
                   <div className="flex justify-between border-b border-white/10 pb-3"><span className="text-gray-400">Paket Investasi (5 Ekor)</span><span className="font-bold">Rp 7.500.000</span></div>
+                  <div className="flex justify-between border-b border-white/10 pb-3"><span className="text-gray-400">Biaya Pakan (6 Bulan)</span><span className="font-bold">Rp 3.000.000</span></div>
                   <div className="flex justify-between border-b border-white/10 pb-3"><span className="text-gray-400">Estimasi Jual (Idul Adha)</span><span className="font-bold text-[#d4a373]">Rp 15.000.000</span></div>
                   <div className="bg-white/10 p-4 rounded-xl text-center mt-6 border border-white/5"><span className="block text-gray-400 text-xs mb-1">Estimasi Bagi Hasil Mitra (50%)</span><span className="text-2xl font-bold text-[#d4a373]">Rp 2.250.000*</span></div>
                   <p className="text-center text-[10px] text-gray-500 mt-2">*Hanya ilustrasi. Hasil aktual bergantung pada pasar.</p>
@@ -303,8 +304,8 @@ function App() {
                     <h3 className="text-2xl font-bold">Omah Cempe</h3>
                     <p className="text-gray-400 text-sm leading-relaxed">Menyediakan hewan ternak berkualitas dengan perawatan terbaik. Amanah, syari, dan profesional.</p>
                     <div className="flex justify-center md:justify-start gap-4">
-                        <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#d4a373] transition"><Instagram size={18}/></a>
-                        <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#d4a373] transition"><Youtube size={18}/></a>
+                        <a href="https://www.instagram.com/omahcempe?igsh=ejV0Zm0zcXFxbTdt" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#d4a373] transition"><Instagram size={18}/></a>
+                        <a href="https://youtube.com/@omahcempene_galia?si=yVN4AKRZj9bQZPqj" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#d4a373] transition"><Youtube size={18}/></a>
                     </div>
                 </div>
                 <div>
